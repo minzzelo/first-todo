@@ -1,0 +1,171 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Patrick Hand', cursive;
+    background-color: rgb(236, 236, 236);
+}
+
+/*---CONTAINER---*/
+
+.container {
+    padding: 10px;
+    width: 380px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 380px;
+    height: 200px;
+    background-color: pink;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+.clear {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.clear i {
+    font-size: 30px;
+    color: white;
+}
+
+.clear i:hover {
+    cursor: pointer;
+    text-shadow: 1px 3px 3px rgb(128, 128, 128);
+    transform: rotate(45deg);
+}
+
+#date {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #FFF;
+    font-size: 25px;
+}
+
+/*---CONTENT---*/
+.content {
+    width: 380px;
+    height: 350px;
+    max-height: 350px;
+    background-color: #FFF;
+    overflow: auto;
+}
+
+.content::-webkit-scrollbar { 
+    display: none; 
+}
+
+.content ul {
+    padding: 0;
+    margin: 0;
+}
+
+.item {
+    width:380px;
+    height: auto;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item i.co {
+    position: absolute;
+    font-size: 25px;
+    padding-left: 5px;
+    left: 15px;
+    top: 10px;
+}
+
+.item i.co:hover {
+    cursor: pointer;
+}
+
+.item p.text {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    left: 50px;
+    top: 7px;
+    background-color: #FFF;
+    max-width: 285px;
+}
+
+.item i.de{
+    position: absolute;
+    font-size: 25px;
+    right:15px;
+    top:10px;
+}
+.item i.de:hover{
+    color:#af0000;
+    cursor: pointer;
+}
+
+.fa-check-circle{
+    color:#6eb200;
+}
+
+.lineThrough{
+    text-decoration: line-through;
+    color : #ccc;
+}
+
+/**ADD ITEM **/
+.add-to-do {
+    position: relative;
+    width: 360px;
+    height: 40px;
+    background-color: #FFF;
+    padding: 10px;
+    border-top: 3px dotted pink;
+}
+
+.add-to-do i {
+    position: absolute;
+    font-size: 40px;
+    color: pink;
+}
+
+.add-to-do input {
+    position: absolute;
+    left: 50px;
+    height: 35px;
+    width: 310px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding-left: 10px;
+    font-family: 'Patrick Hand', cursive;
+    vertical-align: middle;
+}
+
+.add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: pink;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+}
+.add-to-do input::-moz-placeholder { /* Firefox 19+ */
+    color: pink;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+}
+.add-to-do input:-ms-input-placeholder { /* IE 10+ */
+    color: pink;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+}
+.add-to-do input:-moz-placeholder { /* Firefox 18- */
+    color: pink;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+}
